@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>countdown</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/timeB.css" rel="stylesheet">
+  <link href="/css/buttonB.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/dropdownB.css">
+
+</head>
+<body>
+<div class="jumbotron">
+<ol class="drop">
+  <li><a2>My Focus</a2></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a href="/">My Focus</a>
+      <a href="/friends">Friends</a>
+      <a href="/fake">Login</a>
+    </div>
+  </li>
+</ol>
+<a href="/viewAlt"><button class="button button2">← BACK</button></a>
+<div id="countdownmain">
+  <div id="clock">
+    <div id="timer">
+      <div id="title">Ready?</div>
+      <div id="countdown">
+        <span id="minutes">30</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="controls" class="reset">
+        <div id="start"><i class="fas fa-play"></i> Start</div>
+        <div id="pause"><i class="fas fa-pause"></i> Pause</div>
+        <div id="reset"><i class="fas fa-sync-alt"></i> Reset</div>
+      </div>
+    </div>
+  </div>
+  <div id="options">
+    <div id="session">
+      <i id="incrSession" class="fas fa-angle-double-up"></i>
+      <span class="option-title">Focus Time</span>
+      <input id="sessionInput" type="number" value="30" max="60" min="1">
+      <i id="decrSession" class="fas fa-angle-double-down"></i>
+    </div>
+    <div id="break">
+      <i id="incrBreak" class="fas fa-angle-double-up"></i>
+      <span class="option-title">Break</span>
+      <input id="breakInput" type="number" value="5" max="10" min="1">
+      <i id="decrBreak" class="fas fa-angle-double-down"></i>
+    </div>
+  </div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>  <script src="/js/time.js"></script>
+</div>
+</body>
+</html>

@@ -10,7 +10,7 @@ var handlebars = require('express3-handlebars');
 const cookieSession = require('cookie-session');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
-
+var time = require('./routes/time');
 var index = require('./routes/index');
 
 var fake = require('./routes/fake');
@@ -68,6 +68,7 @@ app.use('/profile',profileRoutes);
 
 // Add routes here
 app.get('/', index.view);
+app.get('/viewAlt', index.viewAlt);
 app.get('/friends', friends.view);
 app.get('/view_friend', friends.open);
 app.get('/task_page', task.viewTask);
@@ -75,6 +76,8 @@ app.get('/add_task',task.addTask);
 app.get('/add',add.addFriend);
 app.get('/stop_watch',stopwatch.stopWatch);
 app.get('/fake',fake.fake);
+
+app.get('/time',time.view);
 // Example route
 // app.get('/users', user.list);
 

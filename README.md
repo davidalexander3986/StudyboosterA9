@@ -20,4 +20,3 @@ Click the "Friends" button to navigate to page 2, and the "My Focus" button for 
 Zeshu Zhu:
 For A6, we add something new, now you can click "+" to add new tasks and descriptions :)
 By adding new tasks and descriptions, you can see in the "My focus" page.
-# StudyBoosterA8

@@ -47,7 +47,7 @@
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
           ['Country', 'You','Mark A.'],
-          ['United States', 80, 0],          
+          ['United States', 80, 0],
           ['Canada', 0, 100],
         ]);
 
@@ -66,14 +66,7 @@
 		<div class="jumbotron">
 <ul>
   <li><a2>Mark A.</a2></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">More</a>
-    <div class="dropdown-content">
-      <a href="/">My Focus</a>
-      <a href="/friends">Friends</a>
-      <a href="/fake">Login</a>
-    </div>
-  </li>
+  {{> navbar}}
 </ul>
 
 <div class="container">
@@ -89,12 +82,12 @@
 
   <p id="myP">Mark A. has <span id="demo">0</span> focus score more than you</p>
 
-  <button class="btn124" onclick="move();this.disabled='true'">Let's see who is better!</button> 
+  <button class="btn124" onclick="move();this.disabled='true'">Let's see who is better!</button>
 </div>
 
 <script>
 function move() {
-  var elem = document.getElementById("myBar");   
+  var elem = document.getElementById("myBar");
   var width = 0;
   var id = setInterval(frame, 50);
   function frame() {
@@ -103,8 +96,8 @@ function move() {
       document.getElementById("myP").className = "w3-text-green w3-animate-opacity";
       document.getElementById("myP").innerHTML = "Mark A. Wins! He has 80 focus score more than you";
     } else {
-      width++; 
-      elem.style.width = width + '%'; 
+      width++;
+      elem.style.width = width + '%';
       var num = width * 8 / 10;
       num = num.toFixed(0)
       document.getElementById("demo").innerHTML = num;

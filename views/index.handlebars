@@ -38,23 +38,13 @@ $(document).ready(function(){
 =======
   <li><a2>{{#if user}}{{user.name}}'s {{/if}}Focus Home Page</a2></li>
 
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">More</a>
-    <div class="dropdown-content">
-      <a href="/">My Focus</a>
-      <a href="/friends">Friends</a>
-      <a href="/fake">Login</a>
-    </div>
-  </li>
+{{> navbar}}
 </ul>
 		<!-- <ol>
 		{{#each projects}}
 			<li><a href="#{{id}}">{{name}}</a></li>
 		{{/each}}
 		</ol> -->
-
-
-
 
 		</div>
 
@@ -65,7 +55,7 @@ $(document).ready(function(){
       <div class="speech-bubble photo">80</div>
       <div class="bar-inner ph"></div>
 
-</div>	
+</div>
 
 <div class=taskc><h3>All of Your Tasks</h3></div>
 <div class="taskb"><button class="btn121" id="hide">Hide All Task</button>

@@ -29,5 +29,5 @@ function dropdownClicked(e) {
 
 	ga("send", "event", 'dropdown', 'click');
 
-	e.preventDefault();
+	//e.preventDefault();
 }

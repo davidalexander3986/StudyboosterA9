@@ -12,11 +12,11 @@ const mongoose = require('mongoose');
 const keys = require('./config/keys');
 var time = require('./routes/time');
 var index = require('./routes/index');
-
+var data = require('./data.json');
 var fake = require('./routes/fake');
 
 var add = require('./routes/add');
-
+var math = require('mathjs');
 var friends = require('./routes/friends');
 
 var task = require('./routes/task');
@@ -44,6 +44,9 @@ app.set('port', process.env.PORT || 8080);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
+
+
+console.log(data['friends']);
 mongoose.connect(process.env.MONGODB_URI || keys.mongodb.dbURI,{ useNewUrlParser: true, useUnifiedTopology: true}, () => {
     console.log('connected to mongodb');
 });

@@ -16,6 +16,7 @@
     "express": "^4.16.4",
     "express3-handlebars": "^0.5.2",
     "favicon": "0.0.2",
+    "mathjs": "^6.6.1",
     "mongodb": "*",
     "mongoose": "^5.9.1",
     "passport": "^0.4.1",

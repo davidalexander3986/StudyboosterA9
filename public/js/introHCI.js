@@ -12,6 +12,7 @@ $(document).ready(function() {
 function initializePage() {
 	// your code here
 	$('.task').click(taskClicked);
+	$('.dropdown').click(dropdownClicked);
 
 }
 function taskClicked(e) {
@@ -22,5 +23,11 @@ function taskClicked(e) {
 	console.log("Task clicked");
     $(containingProject).append("<p>Task notes.</p>");
     //}
+	e.preventDefault();
+}
+function dropdownClicked(e) {
+
+	ga("send", "event", 'dropdown', 'click');
+
 	e.preventDefault();
 }

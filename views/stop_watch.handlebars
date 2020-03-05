@@ -30,33 +30,27 @@
 	<div>
 
 	<div class="task_timeadd">
-   		<h3>Focus Time: <span id="time"></span><h3>
+   		<div class="task_time"><h3>Focus Time: <span id="time"></span><h3>
     	<input type="button" value="start" onclick="stopwatch.start();">
     	<input type="button" value="stop" onclick="stopwatch.stop();">
     	<input type="button" value="reset" onclick="stopwatch.reset();">
-    <div>
 
 
 
 
  	<form id="addFriendForm" role="form" method="get" action="/add">
-	<div class="task_time">
 		<h3>Add a New Task</h3>
 	    <h4><div class="form-group"><h4>
 	      <label for="name">Your Task Name:</label>
 	      <input type="text" class="form-control" id="name" placeholder="Task Name" name="name">
 	    </div>
 	    <h4><div class="form-group"><h4>
-	      <label for="description">Class:</label>
+	      <label for="description">Your Class Name:</label>
 	      <input type="text" class="form-control" id="description" placeholder="Class Description" name="description">
 	    </div>
 	    <h4><div class="form-group"><h4>
 	      <label for="name">Enter Your Time:</label>
 	      <input type="number" class="form-control" id="time" placeholder="Minutes" name="time">
-	    </div>
-		<h4><div class="form-group"><h4>
-	      <label for="notes">Notes:</label>
-	      <input type="text" class="form-control" id="description" placeholder="work notes" name="notes">
 	    </div>
 	    <input type="submit" id="submitBtn" class="btn btn-default" value="Add the new task"></input>
 	</form>

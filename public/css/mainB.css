@@ -19,9 +19,9 @@
 }
 
 .task_time {
-	  border-style: solid;
+	  border-style: dashed;
     border-radius: 12px;
-    background-image: url("/img/2.png");
+    background-color: lightgreen;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -30,7 +30,10 @@
 
 
 .task_timeadd{
-    background-image: url("/img/5.jpg");
+	border-top-style: solid;
+  	border-right-style: none;
+  	border-bottom-style: solid;
+  	border-left-style: none;
   	margin-bottom: 10px
 }
 
@@ -152,7 +155,7 @@
 }
 
 .btn121 {
-  border: 2px solid black;
+  border: 2px solid lightgreen;
   border-radius: 12px;
   background-color: white;
   color: black;
@@ -178,7 +181,7 @@
 }
 
 .btn125 {
-  border: 2px solid black;
+  border: 2px solid lightgreen;
   border-radius: 12px;
   background-color: white;
   color: black;
@@ -206,9 +209,9 @@ p121 {
 }
 
 .taskb{
-  border: 2px solid white;
+  border: 2px solid lightgreen;
   border-radius: 12px;
-  background-image: url("/img/2.png");
+  background-color: lightgreen;
 }
 
 .taskc{

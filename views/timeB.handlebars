@@ -4,18 +4,25 @@
 <meta charset="UTF-8">
 <title>countdown</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/time.css" rel="stylesheet">
-  <link href="/css/button.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+  <link href="/css/timeB.css" rel="stylesheet">
+  <link href="/css/buttonB.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/dropdownB.css">
 
 </head>
 <body>
 <div class="jumbotron">
 <ol class="drop">
   <li><a2>My Focus</a2></li>
-  {{> navbar}}
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a href="/">My Focus</a>
+      <a href="/friends">Friends</a>
+      <a href="/fake">Login</a>
+    </div>
+  </li>
 </ol>
-<a href="/"><button class="button button2">← BACK</button></a>
+<a href="/page_b"><button class="button button2">← BACK</button></a>
 <div id="countdownmain">
   <div id="clock">
     <div id="timer">

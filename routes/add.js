@@ -6,7 +6,7 @@ exports.addFriend = function(request, response) { 
 	var description = request.query.description;
 	var time = request.query.time;
 	var notes = request.query.notes;
-	var newFriend = {"name": name, "description": description, "time": time + " " + "Minutes", "notes": notes};
+	var newFriend = {"name": name, "description": description, "time": time};
 	data.friends.push(newFriend);
 	response.render('index', data);
  }

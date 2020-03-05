@@ -1,28 +1,41 @@
 <html>
-
 <head>
-	<link href="/css/fake.css" rel="stylesheet">
-	<link href="/css/main.css" rel="stylesheet">
-	<script src="/js/fake.js"></script>
-	<style>
-	.google-btn{
-                color: #fff;
-                text-decoration: none;
-                font-size: 18px;
-                padding: 10px;
-                background: #ff5353;
-            }
-	</style>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/fake.js"></script>
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/focusbar.css" rel="stylesheet">
+  <link href="/css/fake.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
-	<div id="box">
 		<div id="footer">
 	<div class="container">
-  <h3>Login:</h3>
+		<div class="jumbotron">
+<ul>
+
+  <li><a2>{{#if user}}{{user.name}}'s {{/if}}Login Page</a2></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a href="/">My Focus</a>
+      <a href="/friends">Friends</a>
+      <a href="/fake">Login</a>
+    </div>
+  </li>
+</ul>
 
 	</div>
-	 <a class="google-btn" href="/auth/google">Google+</a>
+<div class="google-btn">
+  <div class="google-icon-wrapper">
+    <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+  </div>
+  <a class="btn-text" href="/auth/google"><b>Sign in with google</b></a>
+</div>
 
 <!-- <form name="loginEmail" onsubmit="return validateForm();" method="post">
 
@@ -37,8 +50,8 @@
 <a href="javascript: history.go(-1)">Login</a>
 
 </form> -->
+</div>
+</div>
 
-
-  </div>
 </body>
 </html>

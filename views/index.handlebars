@@ -5,12 +5,10 @@
 	<title>Study Booster</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<link href="/css/main.css" rel="stylesheet">
 	<link href="/css/focusbar.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/css/dropdown.css">
   <script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/introHCI.js"></script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -36,17 +34,10 @@ $(document).ready(function(){
 		<div class="jumbotron">
 <ul>
 
-=======
-  <li><a href="#home">{{#if user}}{{user.name}}'s {{/if}}Focus</a></li>
 
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">More</a>
-    <div class="dropdown-content">
-      <a href="/">My Focus</a>
-      <a href="/friends">Friends</a>
-      <a href="/fake">Login</a>
-    </div>
-  </li>
+  <li><a2>{{#if user}}{{user.name}}'s {{/if}}Focus Home Page</a2></li>
+
+{{> navbar}}
 </ul>
 		<!-- <ol>
 		{{#each projects}}
@@ -54,10 +45,9 @@ $(document).ready(function(){
 		{{/each}}
 		</ol> -->
 
-
-
-
 		</div>
+
+<img src="/img/1.png" style="width:200px">
 
 <div class="foucsbar">
   <div class="fbar">
@@ -66,7 +56,7 @@ $(document).ready(function(){
       <div class="speech-bubble photo">80</div>
       <div class="bar-inner ph"></div>
 
-</div>	
+</div>
 
 <div class=taskc><h3>All of Your Tasks</h3></div>
 <div class="taskb"><button class="btn121" id="hide">Hide All Task</button>
@@ -91,7 +81,7 @@ $(document).ready(function(){
 				<p>{{description}}</p>
 			</div>
 			<div id="time_spent">
-				<p>{{time}} minutes</p>
+				<p>{{time}}<span> Minutes</span></p>
 			</div>
 		</div>
 	{{/each}}

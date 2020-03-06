@@ -7,7 +7,11 @@ exports.view = function(request, response){
   response.render('index', data);
 };
 
-exports.viewAlt = function(req, res){
+exports.viewB = function(req, res){
     data["viewAlt"] = true;
     res.render('indexB', data);
+};
+exports.viewA = function(req, res){
+    data["viewAlt"] = true;
+    res.render('indexA', data);
 };

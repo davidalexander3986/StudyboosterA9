@@ -68,6 +68,9 @@ app.use('/profile',profileRoutes);
 
 // Add routes here
 app.get('/', index.view);
+app.get('/page_A', index.viewA);
+app.get('/page_B', index.viewB)
+
 app.get('/friends', friends.view);
 app.get('/view_friend', friends.open);
 app.get('/task_page', task.viewTask);
